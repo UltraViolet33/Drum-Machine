@@ -1,0 +1,12 @@
+.drum-pad {
+  border: 1px solid black;
+  width: 100px;
+  height: 80px;
+}
+
+#drum-pad-container {
+  display: flex;
+  width: 332px;
+  height: 272px;
+  flex-wrap: wrap;
+}

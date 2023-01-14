@@ -1,9 +1,11 @@
 import { DrumPad } from "./DrumPad";
+import { Control } from "./Control";
 
 export const Container = () => {
   return (
-    <div>
+    <>
       <DrumPad />
-    </div>
+      <Control />
+    </>
   );
 };

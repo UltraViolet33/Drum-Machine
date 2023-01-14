@@ -1,7 +1,11 @@
+import { Container } from "./components/Container";
+import "./App.css";
+
 const App = () => {
   return (
-    <div>
+    <div id="drum-machine">
       <h1>Hello</h1>
+      <Container />
     </div>
   );
 };

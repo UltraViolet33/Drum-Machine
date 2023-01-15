@@ -2,10 +2,18 @@
   border: 1px solid black;
   width: 100px;
   height: 80px;
+  background-color: grey;
+  box-shadow: black 3px 3px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 #drum-pad-container {
   display: flex;
+  gap:5px;
+  padding:5px;
   width: 332px;
   height: 272px;
   flex-wrap: wrap;

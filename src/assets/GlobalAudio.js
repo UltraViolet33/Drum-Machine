@@ -1,13 +1,13 @@
 import audio from "./Heater-1.mp3";
 
-export const GlobalAudio = {
-  audio1: audio,
-  audio2: audio,
-  audio3: audio,
-  audio4: audio,
-  audio5: audio,
-  audio6: audio,
-  audio7: audio,
-  audio8: audio,
-  audio9: audio,
-};
+export const GlobalAudio = [
+  { key: "A", source: audio },
+  { key: "Z", source: audio },
+  { key: "E", source: audio },
+  { key: "Q", source: audio },
+  { key: "S", source: audio },
+  { key: "D", source: audio },
+  { key: "W", source: audio },
+  { key: "X", source: audio },
+  { key: "C", source: audio },
+];

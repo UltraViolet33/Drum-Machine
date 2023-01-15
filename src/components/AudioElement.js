@@ -1,8 +1,6 @@
-export const AudioElement = ({ audio }) => {
-  const audioEl = new Audio(audio.source);
-
+export const AudioElement = ({ audio, play }) => {
   const handlePlaySound = () => {
-    audioEl.play();
+    play(audio);
   };
 
   return (

@@ -1,9 +1,11 @@
 import "./Control.css";
 
-export const Control = () => {
+export const Control = ({ displayText }) => {
+
+  console.log(displayText);
   return (
     <div id="control-container">
-      <p id="display"></p>
+      <p id="display">{displayText}</p>
     </div>
   );
 };

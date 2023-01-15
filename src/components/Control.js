@@ -1,5 +1,3 @@
-import "./Control.css";
-
 export const Control = ({ displayText }) => {
   return (
     <div id="control-container">

@@ -1,6 +1,6 @@
+import { useState } from "react";
 import { DrumPad } from "./DrumPad";
 import { Control } from "./Control";
-import { useState } from "react";
 
 export const Container = () => {
   const [displayText, setDisplayText] = useState("");

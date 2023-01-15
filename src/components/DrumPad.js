@@ -1,7 +1,6 @@
-import "./DrumPad.css";
+import { useEffect } from "react";
 import { GlobalAudio } from "../assets/GlobalAudio";
 import { AudioElement } from "./AudioElement";
-import { useEffect } from "react";
 
 export const DrumPad = ({ setDisplayText }) => {
   const playSound = audioToPlay => {
@@ -15,8 +14,13 @@ export const DrumPad = ({ setDisplayText }) => {
       audio => audio.key === event.key.toUpperCase()
     );
 
+    const div = document.getElementById(audioToPlay.id);
+    div.classList.add("focus");
+    window.setTimeout(() => {
+      div.classList.remove("focus");
+    }, 100);
+
     if (audioToPlay) {
-      console.log(audioToPlay);
       playSound(audioToPlay);
     }
   };

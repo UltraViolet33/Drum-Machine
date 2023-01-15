@@ -10,10 +10,14 @@
   font-weight: bold;
 }
 
+.drum-pad:active {
+  background-color: red;
+}
+
 #drum-pad-container {
   display: flex;
-  gap:5px;
-  padding:5px;
+  gap: 5px;
+  padding: 5px;
   width: 332px;
   height: 272px;
   flex-wrap: wrap;

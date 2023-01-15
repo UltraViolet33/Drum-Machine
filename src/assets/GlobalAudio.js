@@ -9,13 +9,13 @@ import audio8 from "./RP4_KICK_1.mp3";
 import audio9 from "./Heater-6.mp3";
 
 export const GlobalAudio = [
-  { key: "A", source: audio1 },
-  { key: "Z", source: audio2 },
-  { key: "E", source: audio3 },
-  { key: "Q", source: audio4 },
-  { key: "S", source: audio5 },
-  { key: "D", source: audio6 },
-  { key: "W", source: audio7 },
-  { key: "X", source: audio8 },
-  { key: "C", source: audio9 },
+  { key: "Q", id:"Heater-4", source: audio4 },
+  { key: "W", id:"Kick_n_Hat", source: audio7 },
+  { key: "E", id:"Heater-3", source: audio3 },
+  { key: "A", id:"Heater-1", source: audio1 },
+  { key: "S", id:"Cev_H2", source: audio5 },
+  { key: "D", id:"Dsc_Oh", source: audio6 },
+  { key: "Z", id:"Heater-2", source: audio2 },
+  { key: "X", id:"Rp4_KICK_1", source: audio8 },
+  { key: "C", id:"Heater-6", source: audio9 },
 ];

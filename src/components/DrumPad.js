@@ -13,12 +13,11 @@ export const DrumPad = () => {
 
   const playSoundFromKeyboard = key => {
     console.log(key);
-    GlobalAudio.forEach(audio => {
-      if (audio.key === key.toUpperCase()) {
-        const audioElement = new Audio(audio.source);
-        audioElement.play();
-      }
-    });
+    const audioToPlay = GlobalAudio.find(
+      audio => audio.key === key.toUpperCase()
+    );
+    const audioElement = new Audio(audioToPlay.source);
+    audioElement.play();
   };
 
   useEffect(() => {
@@ -27,12 +26,12 @@ export const DrumPad = () => {
       playSoundFromKeyboard(event.key);
     };
     document.addEventListener("keydown", keyDownHandler);
-  });
+  }, []);
 
   return (
     <div id="drum-pad-container">
-      {GlobalAudio.map(audio => (
-        <AudioElement audio={audio} />
+      {GlobalAudio.map((audio, index) => (
+        <AudioElement audio={audio} key={index} />
       ))}
     </div>
   );

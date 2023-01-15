@@ -6,8 +6,8 @@ export const AudioElement = ({ audio }) => {
   };
 
   return (
-    <div className="drum-pad" onClick={handlePlaySound}>
-      <audio src={audio.source}></audio>
+    <div className="drum-pad" id={audio.id} onClick={handlePlaySound}>
+      <audio className="clip" id={audio.key} src={audio.source}></audio>
       {audio.key}
     </div>
   );
